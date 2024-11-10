@@ -1,0 +1,44 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-family: "Sour Gummy", sans-serif;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.page-container h1 {
+  color: slateblue;
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+.page-container p {
+  color: mediumpurple;
+}
+
+.btn {
+  background-color: #c890ff !important;
+  border: none !important;
+  transition: transform 0.2s ease-in-out, background-color 0.2s !important;
+}
+
+.btn:hover {
+  background-color: slateblue !important;
+  transform: scale(1.1);
+}
